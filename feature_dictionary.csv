@@ -1,0 +1,41 @@
+raw_column,display_name,domain,description,unit,type,encoding,observed_min,observed_max,n_distinct
+AGE_years,Age (Years),Demographic,Age,years,Numeric,none,51.0,81.0,30.0
+wieght,Weight,Demographic,Body weight,kg,Numeric,none,63.0,89.0,24.0
+Height,Height,Demographic,Height,cm,Numeric,none,153.0,180.0,28.0
+gender,Gender,Demographic,Gender,,Binary,"male=1, female=0",0.0,1.0,2.0
+MaritalStatus,Marital Status,Demographic,Marital status,,Categorical (integer-coded),"Single/Bachelor=0, Married=1, Divorced=2, Widow=3",0.0,2.0,3.0
+numberofchilderen,Number of Children,Demographic,Number of children,count,Numeric,none,0.0,4.0,5.0
+educationlevel,Education Level,Demographic,Education level,,Ordinal,"Primary=0, Secondary=1, Diploma=2, Professional education/high school=3, High school=4, University/University degree=5",0.0,5.0,4.0
+occupation,Occupation,Demographic,Occupation,,Binary,"housewife/house wife/none=0, any other occupation=1 (case-insensitive, trimmed)",0.0,1.0,2.0
+HTN,Hypertension,Clinical,Hypertension,,Binary,"yes=1, no=0",0.0,1.0,2.0
+Smoke,Smoking Status,Lifestyle,Smoking status,,Binary,"yes=1, no=0",0.0,1.0,2.0
+Alcohol,Alcohol Consumption,Lifestyle,Alcohol consumption,,Binary,"yes=1, no=0 (constant 0 in this cohort)",0.0,0.0,1.0
+Medication_reccd,Medication Received,Clinical,Medication received before surgery,,Binary,"yes=1, no=0",0.0,1.0,2.0
+economicproblems,Economic Problems,Demographic/socioeconomic,Economic problems,,Binary,"yes=1, no=0",0.0,1.0,2.0
+prepainscaletotal2023,Preoperative Pain Score,Pain,Preoperative pain severity category (NPRS-based),category,Ordinal,"1=no pain, 2=mild, 3=moderate, 4=severe (as recorded)",2.0,4.0,3.0
+Depresion_pre,Preoperative Depression,Psychological,Preoperative depression (DASS-21 subscale),score,Numeric,none,6.0,19.0,14.0
+Ansiedad_pre,Preoperative Anxiety,Psychological,Preoperative anxiety (DASS-21 subscale),score,Numeric,none,5.0,20.0,16.0
+Estres_pre,Preoperative Stress,Psychological,Preoperative stress (DASS-21 subscale),score,Numeric,none,6.0,21.0,16.0
+preTotalIFIS,Preoperative IFIS Score,Functional/fitness,International Fitness Scale (IFIS) total,score,Numeric,none,9.0,25.0,16.0
+prefatiguecognitivescale,Preoperative Cognitive Fatigue,Fatigue,FSMC cognitive fatigue subscale,score,Numeric,none,18.0,39.0,20.0
+prefatiguephysicalscale,Preoperative Physical Fatigue,Fatigue,FSMC physical (motor) fatigue subscale,score,Numeric,none,21.0,39.0,19.0
+preFSMCtotal,Preoperative FSMC Total Score,Fatigue,FSMC total (cognitive + physical),score,Numeric,none,40.0,73.0,27.0
+precharolsonindex,Preoperative Charlson Index,Comorbidity,Charlson comorbidity index (as recorded in source study),score,Numeric,none; missing for 8/200 patients (complete-case analysis),7.0,29.0,23.0
+AgeCharlson,Age-Adjusted Charlson Index,Comorbidity,Age band used for the Charlson age adjustment,years,Ordinal,"""50-59""=50, ""60-69""=60, ""70-79""=70, ""80-89""=80",50.0,80.0,4.0
+prekps,Preoperative Karnofsky Performance Score,Functional/fitness,Karnofsky Performance Status,score,Numeric,none,140.0,200.0,7.0
+preapgar,Preoperative APGAR Score,Family,Family APGAR (family functioning),score,Numeric,none,5.0,16.0,9.0
+preselfcare,Preoperative Self-Care,Functional/fitness,FIM self-care,score,Numeric,none,14.0,28.0,13.0
+preSphinctercontrol,Preoperative Sphincter Control,Functional/fitness,FIM sphincter control,score,Numeric,none,3.0,11.0,9.0
+pretransfer,Preoperative Transfer Ability,Functional/fitness,FIM transfers,score,Numeric,none,5.0,15.0,11.0
+prelocomtion,Preoperative Locomotion,Functional/fitness,FIM locomotion,score,Numeric,none,3.0,11.0,9.0
+PRPMotorScore,Preoperative Motor FIM Score,Functional/fitness,FIM motor score (sum of motor domains),score,Numeric,none,29.0,59.0,25.0
+precommunication,Preoperative Communication,Functional/fitness,FIM communication,score,Numeric,none,3.0,11.0,9.0
+presocialcogintive,Preoperative Social Cognition,Functional/fitness,FIM social cognition,score,Numeric,none,4.0,15.0,10.0
+PRPCognitiveScore,Preoperative Cognitive FIM Score,Functional/fitness,FIM cognitive score (communication + social cognition),score,Numeric,none,10.0,26.0,14.0
+PRPTOTALFIM,Preoperative Total FIM Score,Functional/fitness,FIM total score,score,Numeric,none,42.0,78.0,30.0
+prefamiliaestres,Family Stress,Family,Caregiver/family stress (DASS-21 subscale),score,Numeric,none,4.0,16.0,12.0
+prefamiliaresdepreseion,Family Depression,Family,Caregiver/family depression (DASS-21 subscale),score,Numeric,none,6.0,19.0,13.0
+preansiedadfamilia,Family Anxiety,Family,Caregiver/family anxiety (DASS-21 subscale),score,Numeric,none,5.0,16.0,12.0
+pain_change,Outcome source,Outcome,postoperative minus preoperative pain category,,Integer,"Improved if <0, Not Improved if >=0",,,
+postpainscaletotal2023,Postoperative pain category,Outcome (sensitivity analyses only),Pain category 2-3 weeks after surgery,,Ordinal,1=no pain ... 4=severe,,,
+place,Hospital,Grouping (LOHO only; not a predictor),Recruiting hospital,,Categorical,used only as group label,,,
